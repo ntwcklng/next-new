@@ -1,3 +1,5 @@
+import path from 'path'
+import fs from 'fs'
 import test from 'ava'
 import rimraf from 'rimraf'
 import temp from 'temp'
@@ -31,6 +33,20 @@ test('create a new project without errors', async t => {
     _: ['my-new-blog'],
     silent: true
   })
+  t.is(project.name, 'my-new-blog')
+})
+test('create a new project with dependencies', async t => {
+  const project = await cli({
+    _: ['my-new-blog'],
+    silent: true,
+    preact: true,
+    'styled-components': true
+  })
+  const cwd = path.join(process.cwd(), 'my-new-blog')
+  let pkg = await fs.readFileSync(path.resolve(cwd, 'package.json'), 'utf-8')
+  pkg = JSON.parse(pkg)
+  t.is(pkg.dependencies.preact, 'latest')
+  t.is(pkg.dependencies['styled-components'], 'latest')
   t.is(project.name, 'my-new-blog')
 })
 

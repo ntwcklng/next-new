@@ -25,8 +25,8 @@ gulp.task('compile-bin', () =>
   .pipe(cropExt())
   .pipe(gulp.dest('dist/bin')))
 
-gulp.task('watch-lib', () => gulp.watch('src/lib/**/*.js', ['compile-lib']))
-gulp.task('watch-bin', () => gulp.watch('src/bin/*', ['compile-bin']))
+gulp.task('watch-lib', () => gulp.watch('lib/**/*.js', ['compile-lib']))
+gulp.task('watch-bin', () => gulp.watch('bin/*', ['compile-bin']))
 gulp.task('clean', () => del(['dist']))
 
 gulp.task('watch', ['watch-lib', 'watch-bin'])
