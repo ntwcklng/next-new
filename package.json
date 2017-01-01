@@ -1,0 +1,93 @@
+{
+  "name": "next-new",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "nn": "./dist/bin/next-new"
+  },
+  "files": [
+    "dist",
+    "templates"
+  ],
+  "scripts": {
+    "test": "xo && ava",
+    "test:watch": "ava --watch --match='!*SKIP_WATCH*'",
+    "pretest": "npm run build",
+    "prepublish": "npm run build",
+    "build": "gulp compile",
+    "dev": "gulp"
+  },
+  "engines": {
+    "node": ">=6.2.0"
+  },
+  "ava": {
+    "failFast": true,
+    "files": "test/*.js",
+    "source": [
+      "bin/*.js",
+      "lib/*.js",
+      "!dist/**/*"
+    ],
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ],
+    "plugins": [
+      "transform-runtime",
+      "transform-async-to-generator"
+    ]
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "semicolon": false,
+    "ignores": [
+      "dist/**",
+      "out/**",
+      "test/_fixtures/**",
+      "templates/**"
+    ],
+    "rules": {
+      "import/no-unresolved": 0,
+      "ava/no-ignored-test-files": 0,
+      "max-depth": 0,
+      "no-use-before-define": 0,
+      "complexity": 0,
+      "unicorn/no-process-exit": 0,
+      "no-control-regex": 0,
+      "no-case-declarations": 0,
+      "no-useless-escape": 0
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.16.0",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-register": "6.18.0",
+    "chalk": "^1.1.3",
+    "copy-template-dir": "^1.3.0",
+    "minimist": "^1.2.0",
+    "mz": "^2.6.0",
+    "ora": "^0.4.0",
+    "rimraf": "^2.5.4"
+  },
+  "devDependencies": {
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-cached": "1.1.1",
+    "gulp-ext": "1.0.0",
+    "gulp-task-listing": "1.0.1",
+    "xo": "^0.17.1",
+    "temp": "^0.8.3",
+    "ava": "^0.17.0",
+    "del": "^2.2.2"
+  }
+}
