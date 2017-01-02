@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import parseArgs from 'minimist'
-import chalk from 'chalk'
 import nn from '../lib/'
 
 const argv = parseArgs(process.argv.slice(2), {
@@ -11,10 +10,9 @@ const argv = parseArgs(process.argv.slice(2), {
   },
   boolean: ['h', 'install', 'force', 'init', 'silent']
 })
-Promise.resolve()
-.then(async () => {
-  await nn(argv)
-}).catch(err => {
-  console.error(`> ${chalk.red('Error!')} ${err}`)
-  process.exit(1)
-})
+
+try {
+  nn(argv)
+} catch (err) {
+  process.exit(0)
+}
