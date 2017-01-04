@@ -8,7 +8,7 @@ const argv = parseArgs(process.argv.slice(2), {
     i: 'install',
     s: 'silent'
   },
-  boolean: ['h', 'install', 'force', 'init', 'silent']
+  boolean: ['h', 'install', 'force', 'init', 'silent', 'debug']
 })
 
 try {
