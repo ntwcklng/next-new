@@ -15,7 +15,7 @@ Description
 
 Usage
 
-  $ nn <dir>[,options]
+  $ nn <dir>[,options|dependencie]
   If no directory is provided the current directory will be used.
 
 Options
@@ -38,10 +38,10 @@ Examples
 
   Create 'my-new-blog', install all dependencies and run in silent mode
 
-  $ nn my-new-blog --install --silent
+    $ nn my-new-blog --install --silent
 
   Create 'my-new-blog', and add Glamor as a dependency
 
-  $ nn my-new-blog --glamor
+    $ nn my-new-blog --glamor
 
 ```
