@@ -15,7 +15,7 @@ Description
 
 Usage
 
-  $ nn <dir>[,options|dependencie]
+  $ nn <dir>[,options|dependencies]
   If no directory is provided the current directory will be used.
 
 Options
