@@ -16,7 +16,6 @@ args
   .option('init', 'Initialize a Next Project in the current folder', false)
   .option('force', 'Force init', false)
   .option('debug', 'Debugging', false)
-  .option('deps', 'Choose additional packages (glamor, styled-components, preact, inferno)')
 const flags = args.parse(process.argv)
 
 try {
