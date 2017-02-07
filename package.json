@@ -1,6 +1,6 @@
 {
   "name": "next-new",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "repository": "ntwcklng/next-new",
@@ -47,7 +47,13 @@
       "templates/**"
     ]
   },
-  "keywords": ["next.js", "zeit", "scaffold", "boilerplate", "create"],
+  "keywords": [
+    "next.js",
+    "zeit",
+    "scaffold",
+    "boilerplate",
+    "create"
+  ],
   "author": "Marvin Mieth <ntwcklng@gmail.com>",
   "license": "MIT",
   "dependencies": {
