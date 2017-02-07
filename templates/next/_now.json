@@ -1,0 +1,13 @@
+{
+  "name": "{{name}}",
+  "aliases": [],
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "files": [],
+  "type": "npm",
+  "forwardNpm": false,
+  "engines": {
+    "node": "7.4.0"
+  }
+}
