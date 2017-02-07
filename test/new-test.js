@@ -27,6 +27,17 @@ test('create a new project with errors', async t => {
   }
 })
 
+test('Initialize a new project', async t => {
+  const tmpDirInit = await temp.mkdirSync('next-new-init')
+  process.chdir(tmpDirInit)
+  const project = await cli({
+    silent: true,
+    init: true
+  }, tmpName)
+  t.is(project.name, tmpName)
+  process.chdir(tmpDir)
+})
+
 test('create a new project without errors', async t => {
   const project = await cli({
     silent: true
