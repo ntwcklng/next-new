@@ -3,6 +3,8 @@
 
 ## Usage
 
+[![asciicast](https://asciinema.org/a/47yw9q6ru0s0o88wfmy7hvllh.png)](https://asciinema.org/a/47yw9q6ru0s0o88wfmy7hvllh)
+
 ```
 ▲ nn help
 
