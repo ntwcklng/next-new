@@ -42,7 +42,10 @@
       "no-control-regex": 0,
       "no-case-declarations": 0,
       "no-useless-escape": 0
-    }
+    },
+    "ignores": [
+      "templates/**"
+    ]
   },
   "keywords": ["next.js", "zeit", "scaffold", "boilerplate", "create"],
   "author": "Marvin Mieth <ntwcklng@gmail.com>",

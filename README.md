@@ -31,6 +31,4 @@
 
 ```
 # Contribute
-To build this CLI in dev-mode run `$ npm run dev`
-
-Get a realtime Feedback for important tests, run`$ npm run test:watch`
+Get a realtime Feedback for important tests, run `$ npm run test:watch`
