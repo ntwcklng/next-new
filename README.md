@@ -1,47 +1,29 @@
 # next-new
+> Scaffolds a simple [Next.js](https://github.com/zeit/next.js) project structure to get started quickly
 
-# Dev. mode
-`$ npm run dev`
-`$ npm run test:watch`
-
-# Usage
+## Usage
 
 ```
-$ nn --help
+▲ nn help
 
-Description
+  Usage: nn [options] [command] <projectName>
 
-  Scaffolds a simple project structure to get started quickly
+  Commands:
 
-Usage
+    help  Display help
 
-  $ nn <dir>[,options|dependencies]
-  If no directory is provided the current directory will be used.
+  Options:
 
-Options
+    -d, --debug    Debugging (disabled by default)
+    -f, --force    Force init (disabled by default)
+    -h, --help     Output usage information
+    -t, --init     Initialize a Next Project in the current folder (disabled by default)
+    -i, --install  Install all dependencies (disabled by default)
+    -s, --silent   ssshhhhhhh! (disabled by default)
+    -v, --version  Output the version number
 
-  --init          Initialize a new Project is the current directory
-  --force         Force init (may overwrite existing files!, must be used with --init)
-  --install, -i   Install npm dependencies
-  --help, -h      Displays this message
-  --silent, -s    ssshhhhhh!
-  --debug         print debug messages
-
-Add optional dependencies
-
-  --glamor
-  --styled-components
-  --preact
-  --inferno
-
-Examples
-
-  Create 'my-new-blog', install all dependencies and run in silent mode
-
-    $ nn my-new-blog --install --silent
-
-  Create 'my-new-blog', and add Glamor as a dependency
-
-    $ nn my-new-blog --glamor
 
 ```
+# Contribute
+To build this CLI in dev-mode run `$ npm run dev`
+Get a realtime Feedback for important tests, run`$ npm run test:watch`
