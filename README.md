@@ -31,4 +31,4 @@
 
 ```
 # Contribute
-Get a realtime Feedback for important tests, run `$ npm run test:watch`
+See [Contribution guidelines for this project](CONTRIBUTING.md)
