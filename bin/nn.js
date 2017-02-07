@@ -1,6 +1,11 @@
 #!/usr/bin/env node
 import args from 'args'
+import updateNotifier from 'update-notifier'
 import nn from '../lib/'
+
+const pkg = require('../package.json')
+
+updateNotifier({pkg}).notify()
 
 args
   .option('install', 'Install all dependencies', false)
