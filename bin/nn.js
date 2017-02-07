@@ -1,11 +1,18 @@
 #!/usr/bin/env node
-import args from 'args'
-import updateNotifier from 'update-notifier'
-import nn from '../lib/'
-
-const pkg = require('../../package.json')
+const path = require('path')
+const args = require('args')
+const updateNotifier = require('update-notifier')
+const asyncToGen = require('async-to-gen/register')
+const isAsyncSupported = require('is-async-supported')
+const nodeVersion = require('node-version')
+const pkg = require('../package.json')
 
 updateNotifier({pkg}).notify()
+
+if (nodeVersion.major < 6) {
+  console.error(`Error! next-new requires at least version 6 of Node. Please upgrade!`)
+  process.exit(1)
+}
 
 args
   .option('install', 'Install all dependencies', false)
@@ -16,8 +23,15 @@ args
 
 const flags = args.parse(process.argv, {value: '<projectName>'})
 
-try {
-  nn(flags, args.sub[0])
-} catch (err) {
-  process.exit(0)
+if (!isAsyncSupported()) {
+  // Support for keywords "async" and "await"
+  const pathSep = process.platform === 'win32' ? '\\\\' : '/'
+  const directoryName = path.parse(path.join(__dirname, '..')).base
+
+  asyncToGen({
+    includes: new RegExp(`.*${directoryName}?${pathSep}(lib|bin).*`),
+    excludes: null,
+    sourceMaps: false
+  })
 }
+require('../lib/')(flags, args.sub[0])
