@@ -7,7 +7,8 @@
 
 ## Usage
 
-[![asciicast](https://asciinema.org/a/47yw9q6ru0s0o88wfmy7hvllh.png)](https://asciinema.org/a/47yw9q6ru0s0o88wfmy7hvllh)
+![nn](https://cloud.githubusercontent.com/assets/8714775/22749750/b1a27126-ee2e-11e6-9fb4-848d2608f72e.gif)
+
 
 ```
 ▲ nn help
