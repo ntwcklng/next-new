@@ -7,7 +7,8 @@
 
 ## Usage
 
-![nn](https://cloud.githubusercontent.com/assets/8714775/22749750/b1a27126-ee2e-11e6-9fb4-848d2608f72e.gif)
+![nn](https://cloud.githubusercontent.com/assets/8714775/22752703/d2454bf0-ee39-11e6-986d-1511816032a9.gif)
+
 
 
 ```
