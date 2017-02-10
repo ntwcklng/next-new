@@ -17,7 +17,7 @@ if (nodeVersion.major < 6) {
 args
   .option('install', 'Install all dependencies', false)
   .option('silent', 'ssshhhhhhh!', false)
-  .option(['t', 'init'], 'Initialize a Next Project in the current folder', false)
+  .option('init', 'Initialize a Next Project in the current folder', false)
   .option('force', 'Force init', false)
   .option('debug', 'Debugging', false)
 
