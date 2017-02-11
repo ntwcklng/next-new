@@ -1,4 +1,4 @@
-# next-new
+# 🏗 next-new
 > Scaffolds a simple [Next.js](https://github.com/zeit/next.js) project structure to get started quickly
 
 ## Install
@@ -8,8 +8,6 @@
 ## Usage
 
 ![nn](https://cloud.githubusercontent.com/assets/8714775/22752703/d2454bf0-ee39-11e6-986d-1511816032a9.gif)
-
-
 
 ```
 ▲ nn help
@@ -32,5 +30,6 @@
 
 
 ```
+
 # Contribute
 See [Contribution guidelines for this project](CONTRIBUTING.md)
