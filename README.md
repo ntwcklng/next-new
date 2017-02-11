@@ -9,6 +9,20 @@
 
 ![nn](https://cloud.githubusercontent.com/assets/8714775/22752703/d2454bf0-ee39-11e6-986d-1511816032a9.gif)
 
+## Example
+Run `nn my-new-blog` and get the following project structure
+
+```
+/Users/marvinmieth/dev/my-new-blog
+|-- next.config.js
+|-- now.json
+|-- package.json
+|-- pages
+|  `-- index.js
+```
+
+`nn help`
+
 ```
 ▲ nn help
 
