@@ -13,7 +13,7 @@
 Run `nn my-new-blog` and get the following project structure
 
 ```
-/Users/marvinmieth/dev/my-new-blog
+/my-new-blog
 |-- next.config.js
 |-- now.json
 |-- package.json
