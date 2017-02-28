@@ -1,7 +1,7 @@
-import test from 'ava'
-import rimraf from 'rimraf'
-import temp from 'temp'
-import cli from '../dist/lib/'
+const test = require('ava')
+const rimraf = require('rimraf')
+const temp = require('temp')
+const cli = require('../lib/')
 
 const tmpName = 'my-new-blog'
 

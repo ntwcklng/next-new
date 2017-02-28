@@ -1,9 +1,30 @@
 # next-new
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/ntwcklng/next-new.svg)](https://greenkeeper.io/)
+
 > Scaffolds a simple [Next.js](https://github.com/zeit/next.js) project structure to get started quickly
 
+## Install
+
+`$ npm install -g next-new`
+
 ## Usage
+
+![nn](https://cloud.githubusercontent.com/assets/8714775/22752703/d2454bf0-ee39-11e6-986d-1511816032a9.gif)
+
+## Example
+Run `nn my-new-blog` and get the following project structure
+
+```
+/my-new-blog
+|-- next.config.js
+|-- now.json
+|-- package.json
+|-- pages
+|  `-- index.js
+```
+
+`nn help`
 
 ```
 ▲ nn help
@@ -26,7 +47,6 @@
 
 
 ```
-# Contribute
-To build this CLI in dev-mode run `$ npm run dev`
 
-Get a realtime Feedback for important tests, run`$ npm run test:watch`
+# Contribute
+See [Contribution guidelines for this project](CONTRIBUTING.md)
