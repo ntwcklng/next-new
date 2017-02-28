@@ -1,4 +1,7 @@
-# 🏗 next-new
+# next-new
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/ntwcklng/next-new.svg)](https://greenkeeper.io/)
+
 > Scaffolds a simple [Next.js](https://github.com/zeit/next.js) project structure to get started quickly
 
 ## Install
