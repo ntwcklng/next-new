@@ -1,4 +1,4 @@
-# next-new
+# 🏗 next-new
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/ntwcklng/next-new.svg)](https://greenkeeper.io/)
 
