@@ -14,7 +14,8 @@
   ],
   "scripts": {
     "test": "xo && ava",
-    "test:watch": "ava --watch --match='!*SKIP_WATCH*'"
+    "test:watch": "ava --watch --match='!*SKIP_WATCH*'",
+    "precommit": "npm test"
   },
   "engines": {
     "node": ">=6.2.0"
@@ -72,6 +73,7 @@
   },
   "devDependencies": {
     "ava": "^0.18.1",
+    "husky": "^0.13.2",
     "temp": "^0.8.3",
     "xo": "^0.17.1"
   }
