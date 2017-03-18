@@ -55,7 +55,5 @@ test('SKIP_WATCH create a new project and npm install', async t => {
 
 test.after.always('cleanup', () => {
   process.chdir(origCwd)
-  rimraf(tmpDir, () => {
-    return
-  })
+  rimraf(tmpDir, () => {})
 })
