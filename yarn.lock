@@ -112,13 +112,12 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
-args@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/args/-/args-2.3.0.tgz#c1c8b0b3110e454f6eea660938da2548aeb891b9"
+args@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/args/-/args-2.4.0.tgz#2e6d5616d4ddbc943d5f1fc1ce2128f9d018f69b"
   dependencies:
     camelcase "4.0.0"
     chalk "1.1.3"
-    loud-rejection "1.3.0"
     minimist "1.2.0"
     pkginfo "0.4.0"
 
@@ -2325,7 +2324,7 @@ loose-envify@^1.0.0:
   dependencies:
     js-tokens "^3.0.0"
 
-loud-rejection@1.3.0, loud-rejection@^1.0.0, loud-rejection@^1.2.0:
+loud-rejection@^1.0.0, loud-rejection@^1.2.0:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/loud-rejection/-/loud-rejection-1.3.0.tgz#f289a392f17d2baacf194d0a673004394433b115"
   dependencies:

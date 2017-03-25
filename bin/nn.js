@@ -20,8 +20,9 @@ args
   .option('init', 'Initialize a Next Project in the current folder', false)
   .option('force', 'Force init', false)
   .option('debug', 'Debugging', false)
+  .example('nn my-project --install', 'Creates a new Next.js Project and installs all dependencies')
 
-const flags = args.parse(process.argv, {value: '<projectName>'})
+const flags = args.parse(process.argv, {value: '<projectName>', mainColor: 'blue', subColor: ['dim', 'gray']})
 
 if (!isAsyncSupported()) {
   // Support for keywords "async" and "await"
