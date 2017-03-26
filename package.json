@@ -15,7 +15,9 @@
   "scripts": {
     "test": "xo && ava",
     "test:watch": "ava --watch --match='!*SKIP_WATCH*'",
-    "prepush": "npm test"
+    "prepush": "npm test",
+    "precommit": "lint-staged",
+    "lint": "xo"
   },
   "engines": {
     "node": ">=6.2.0"
@@ -32,20 +34,16 @@
     ]
   },
   "xo": {
-    "esnext": true,
-    "space": true,
-    "semicolon": false,
-    "rules": {
-      "max-depth": 0,
-      "no-use-before-define": 0,
-      "complexity": 0,
-      "unicorn/no-process-exit": 0,
-      "no-control-regex": 0,
-      "no-case-declarations": 0,
-      "no-useless-escape": 0
-    },
+    "extends": "prettier",
     "ignores": [
       "templates/**"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "prettier --single-quote --write",
+      "git add"
     ]
   },
   "keywords": [
@@ -74,6 +72,7 @@
   "devDependencies": {
     "ava": "^0.18.1",
     "husky": "^0.13.3",
+    "prettier": "^0.22.0",
     "temp": "^0.8.3",
     "xo": "^0.19.0"
   }
