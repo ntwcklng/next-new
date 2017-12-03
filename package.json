@@ -70,7 +70,7 @@
     "update-notifier": "^2.2.0"
   },
   "devDependencies": {
-    "ava": "^0.23.0",
+    "ava": "^0.24.0",
     "eslint-config-prettier": "^2.0.0",
     "husky": "^0.14.0",
     "lint-staged": "^5.0.0",
