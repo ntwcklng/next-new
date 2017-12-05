@@ -1,6 +1,6 @@
 {
   "name": "next-new",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Create a new Next.js project",
   "main": "index.js",
   "repository": "ntwcklng/next-new",
