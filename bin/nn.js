@@ -44,4 +44,4 @@ if (!isAsyncSupported()) {
     sourceMaps: false
   })
 }
-require('../lib/')(flags, args.sub[0])
+require('../lib')(flags, args.sub[0])
