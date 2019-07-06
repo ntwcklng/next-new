@@ -73,7 +73,7 @@
     "ava": "^0.25.0",
     "eslint-config-prettier": "^2.0.0",
     "husky": "^1.0.0",
-    "lint-staged": "^7.0.0",
+    "lint-staged": "^9.1.0",
     "prettier": "^1.0.2",
     "temp": "^0.8.3",
     "xo": "^0.22.0"
